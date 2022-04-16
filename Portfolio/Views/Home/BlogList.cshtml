@@ -1,0 +1,10 @@
+﻿@model List<Blog>
+
+@foreach(Blog b in Model){
+    <div class="blog_box" style="width:200px;float:right">
+        <p style="font-size:2em">b.Title</p>
+        <p>b.PublishTime</p>
+        <p>b.ShortDescription</p>
+        <p><a asp-action="BlogDetails">READ MORE → </a></p>
+    </div>
+}
